@@ -76,7 +76,7 @@
 			return $this->host;
 		}
 
-		public function getUsuario() {
+		public function getUsername() {
 			return $this->username;
 		}
 
