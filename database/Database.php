@@ -11,11 +11,7 @@
 		public function __destruct() {}
 
 		public function __toString() {
-			return "\nHOST: " . $this->host .
-			"\nUSUÁRIO: " . $this->username .
-			"\nSENHA: " . $this->password .
-			"\nBASE DE DADOS: " . $this->database .
-			"\nCONEXÃO: " . $this->statusConexao() . "\n";
+			return "\nHOST: " . $this->host . "\nUSUÁRIO: " . $this->username . "\nSENHA: " . $this->password . "\nBASE DE DADOS: " . $this->database . "\nCONEXÃO: " . $this->statusConexao() . "\n";
 		}
 
 		public function setHost(string $host) {

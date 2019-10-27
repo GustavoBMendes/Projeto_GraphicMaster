@@ -9,7 +9,6 @@
 	$database->setDatabase("graphic_master");
 	$database->setConexao();
 
-	// DEBUG MODE
 	if((isset($argv[1]) && $argv[0] == "database.php" && $argv[1] == "debug") || (isset($argv[1]) && $argv[1] == "debug-all")) {
 		echo $database;
 	}
