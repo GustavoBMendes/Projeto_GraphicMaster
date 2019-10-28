@@ -1,0 +1,107 @@
+<?php
+	setlocale(LC_CTYPE, "pt_BR.UTF8");
+	include_once("../model/Permissao.php");
+
+	$permissao1 = new Permissao();
+	$permissao1->setId(1);
+	$permissao1->setNome("Gerente");
+	$permissao1->setReadCliente(TRUE);
+	$permissao1->setInsertCliente(TRUE);
+	$permissao1->setUpdateCliente(TRUE);
+	$permissao1->setRemoveCliente(TRUE);
+	$permissao1->setReadFornecedor(TRUE);
+	$permissao1->setInsertFornecedor(TRUE);
+	$permissao1->setUpdateFornecedor(TRUE);
+	$permissao1->setRemoveFornecedor(TRUE);
+	$permissao1->setReadMp(TRUE);
+	$permissao1->setInsertMp(TRUE);
+	$permissao1->setUpdateMp(TRUE);
+	$permissao1->setRemoveMp(TRUE);
+	$permissao1->setReadPermissao(TRUE);
+	$permissao1->setInsertPermissao(TRUE);
+	$permissao1->setUpdatePermissao(TRUE);
+	$permissao1->setRemovePermissao(TRUE);
+	$permissao1->setReadUsuario(TRUE);
+	$permissao1->setInsertUsuario(TRUE);
+	$permissao1->setUpdateUsuario(TRUE);
+	$permissao1->setRemoveUsuario(TRUE);
+
+	$permissao2 = new Permissao();
+	$permissao2->setId(2);
+	$permissao2->setNome("Atendente");
+	$permissao2->setReadCliente(TRUE);
+	$permissao2->setInsertCliente(TRUE);
+	$permissao2->setUpdateCliente(TRUE);
+	$permissao2->setRemoveCliente(TRUE);
+	$permissao2->setReadFornecedor(FALSE);
+	$permissao2->setInsertFornecedor(FALSE);
+	$permissao2->setUpdateFornecedor(FALSE);
+	$permissao2->setRemoveFornecedor(FALSE);
+	$permissao2->setReadMp(TRUE);
+	$permissao2->setInsertMp(FALSE);
+	$permissao2->setUpdateMp(FALSE);
+	$permissao2->setRemoveMp(FALSE);
+	$permissao2->setReadPermissao(FALSE);
+	$permissao2->setInsertPermissao(FALSE);
+	$permissao2->setUpdatePermissao(FALSE);
+	$permissao2->setRemovePermissao(FALSE);
+	$permissao2->setReadUsuario(FALSE);
+	$permissao2->setInsertUsuario(FALSE);
+	$permissao2->setUpdateUsuario(FALSE);
+	$permissao2->setRemoveUsuario(FALSE);
+
+	$permissao3 = new Permissao();
+	$permissao3->setId(3);
+	$permissao3->setNome("Projetista");
+	$permissao3->setReadCliente(FALSE);
+	$permissao3->setInsertCliente(FALSE);
+	$permissao3->setUpdateCliente(FALSE);
+	$permissao3->setRemoveCliente(FALSE);
+	$permissao3->setReadFornecedor(FALSE);
+	$permissao3->setInsertFornecedor(FALSE);
+	$permissao3->setUpdateFornecedor(FALSE);
+	$permissao3->setRemoveFornecedor(FALSE);
+	$permissao3->setReadMp(TRUE);
+	$permissao3->setInsertMp(TRUE);
+	$permissao3->setUpdateMp(TRUE);
+	$permissao3->setRemoveMp(TRUE);
+	$permissao3->setReadPermissao(FALSE);
+	$permissao3->setInsertPermissao(FALSE);
+	$permissao3->setUpdatePermissao(FALSE);
+	$permissao3->setRemovePermissao(FALSE);
+	$permissao3->setReadUsuario(FALSE);
+	$permissao3->setInsertUsuario(FALSE);
+	$permissao3->setUpdateUsuario(FALSE);
+	$permissao3->setRemoveUsuario(FALSE);
+
+	$permissao4 = new Permissao();
+	$permissao4->setId(4);
+	$permissao4->setNome("Administrador");
+	$permissao4->setReadCliente(TRUE);
+	$permissao4->setInsertCliente(TRUE);
+	$permissao4->setUpdateCliente(TRUE);
+	$permissao4->setRemoveCliente(TRUE);
+	$permissao4->setReadFornecedor(TRUE);
+	$permissao4->setInsertFornecedor(TRUE);
+	$permissao4->setUpdateFornecedor(TRUE);
+	$permissao4->setRemoveFornecedor(TRUE);
+	$permissao4->setReadMp(TRUE);
+	$permissao4->setInsertMp(TRUE);
+	$permissao4->setUpdateMp(TRUE);
+	$permissao4->setRemoveMp(TRUE);
+	$permissao4->setReadPermissao(TRUE);
+	$permissao4->setInsertPermissao(TRUE);
+	$permissao4->setUpdatePermissao(TRUE);
+	$permissao4->setRemovePermissao(TRUE);
+	$permissao4->setReadUsuario(FALSE);
+	$permissao4->setInsertUsuario(FALSE);
+	$permissao4->setUpdateUsuario(FALSE);
+	$permissao4->setRemoveUsuario(FALSE);
+
+	if((isset($argv[1]) && $argv[0] == "model_permissao.php" && $argv[1] == "debug") || (isset($argv[1]) && $argv[1] == "debug-all")) {
+		echo $permissao1;
+		echo $permissao2;
+		echo $permissao3;
+		echo $permissao4;
+	}
+?>
