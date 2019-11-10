@@ -1,0 +1,4 @@
+RewriteCond %{HTTP_HOST} ^graphicmaster.com.br$
+RewriteRule ^(.*)$ “http\:\/\/www\.graphicmaster\.com\.br\/$1” [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
