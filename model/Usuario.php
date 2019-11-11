@@ -1,4 +1,5 @@
 <?php
+	include_once("Permissao.php");
 	class Usuario {
 		private $id;
 		private $nome;
