@@ -16,7 +16,7 @@
 	$usuario2->setLogin("gustavo");
 	$usuario2->setSenha("mendes");
 	$usuario2->setCargo($permissao2);
-	
+
 	$usuario3 = new Usuario();
 	$usuario3->setId(3);
 	$usuario3->setNome("Fernando Silva Silvério");
