@@ -12,11 +12,7 @@
 		public function __destruct() {}
 
 		public function __toString() {
-			return "\nID: " . $this->id .
-			"\nNOME: " . $this->nome .
-			"\nLOGIN: " . $this->login .
-			"\nSENHA: " . $this->senha .
-			"\nCARGO: " . $this->cargo->getNome() . "\n";
+			return "\nID: " . $this->id . "\nNOME: " . $this->nome . "\nLOGIN: " . $this->login . "\nSENHA: " . $this->senha . "\nCARGO: " . $this->cargo->getNome() . "\n";
 		}
 
 		public function setId(int $id) {
