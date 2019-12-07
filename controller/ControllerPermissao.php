@@ -55,19 +55,7 @@
 		}
 
 		public function validaPermissao(Permissao $permissao) {
-			if($permissao->getId() && $permissao->getNome()) {
-				$cliente = $permissao->getReadCliente() || $permissao->getInsertCliente() || $permissao->getUpdateCliente() || $permissao->getRemoveCliente();
-				$fornecedor = $permissao->getReadFornecedor() || $permissao->getInsertFornecedor() || $permissao->getUpdateFornecedor() || $permissao->getRemoveFornecedor();
-				$materiaPrima = $permissao->getReadMp() || $permissao->getInsertMp() || $permissao->getUpdateMp() || $permissao->getRemoveMp();
-				$cargo = $permissao->getReadPermissao() || $permissao->getInsertPermissao() || $permissao->getUpdatePermissao() || $permissao->getRemovePermissao();
-				$usuario = $permissao->getReadUsuario() || $permissao->getInsertUsuario() || $permissao->getUpdateUsuario() || $permissao->getRemoveUsuario();
-				if($cliente || $fornecedor || $materiaPrima || $cargo || $usuario) {
-					return TRUE;
-				}
-			}
-			else {
-				return FALSE;
-			}
+			return ($permissao->getId() && $permissao->getNome()) || $permissao->getReadCliente() || $permissao->getInsertCliente() || $permissao->getUpdateCliente() || $permissao->getRemoveCliente() || $permissao->getReadFornecedor() || $permissao->getInsertFornecedor() || $permissao->getUpdateFornecedor() || $permissao->getRemoveFornecedor() || $permissao->getReadMp() || $permissao->getInsertMp() || $permissao->getUpdateMp() || $permissao->getRemoveMp() || $permissao->getReadPermissao() || $permissao->getInsertPermissao() || $permissao->getUpdatePermissao() || $permissao->getRemovePermissao() || $permissao->getReadUsuario() || $permissao->getInsertUsuario() || $permissao->getUpdateUsuario() || $permissao->getRemoveUsuario() ? TRUE : FALSE;
 		}
 	}
 ?>
