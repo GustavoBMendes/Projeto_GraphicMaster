@@ -9,9 +9,7 @@
 		public function __destruct() {}
 
 		public function __toString() {
-			return "\nID: " . $this->id .
-			"\nNOME: " . $this->nome .
-			"\nCPF: " . $this->cpf . "\n";
+			return "\nID: " . $this->id . "\nNOME: " . $this->nome . "\nCPF: " . $this->cpf . "\n";
 		}
 
 		public function setId(int $id) {
