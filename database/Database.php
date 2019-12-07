@@ -89,12 +89,7 @@
 		}
 
 		public function statusConexao() {
-			if($this->conexao) {
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			return $this->conexao ? TRUE : FALSE;
 		}
 
 		public function closeConexao() {
