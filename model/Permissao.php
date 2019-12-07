@@ -49,14 +49,7 @@
 		public function __destruct() {}
 
 		public function __toString() {
-			return "\nID: " . $this->id .
-			"\nNOME: " . $this->nome .
-			"\nPERMISSÕES:\tREAD\tINSERT\tUPDATE\tREMOVE\t" .
-			"\nCLIENTE:\t" . $this->readCliente . "\t" . $this->insertCliente . "\t" . $this->updateCliente . "\t" . $this->removeCliente .
-			"\nFORNECEDOR:\t" . $this->readFornecedor . "\t" . $this->insertFornecedor . "\t" . $this->updateFornecedor . "\t" . $this->removeFornecedor .
-			"\nMATÉRIA PRIMA:\t" . $this->readMp . "\t" . $this->insertMp . "\t" . $this->updateMp . "\t" . $this->removeMp .
-			"\nPERMISSÃO:\t" . $this->readPermissao . "\t" . $this->insertPermissao . "\t" . $this->updatePermissao . "\t" . $this->removePermissao .
-			"\nUSUÁRIO:\t" . $this->readUsuario . "\t" . $this->insertUsuario . "\t" . $this->updateUsuario . "\t" . $this->removeUsuario . "\n";
+			return "\nID: " . $this->id . "\nNOME: " . $this->nome . "\nPERMISSÕES:\tREAD\tINSERT\tUPDATE\tREMOVE\t" . "\nCLIENTE:\t" . $this->readCliente . "\t" . $this->insertCliente . "\t" . $this->updateCliente . "\t" . $this->removeCliente . "\nFORNECEDOR:\t" . $this->readFornecedor . "\t" . $this->insertFornecedor . "\t" . $this->updateFornecedor . "\t" . $this->removeFornecedor . "\nMATÉRIA PRIMA:\t" . $this->readMp . "\t" . $this->insertMp . "\t" . $this->updateMp . "\t" . $this->removeMp . "\nPERMISSÃO:\t" . $this->readPermissao . "\t" . $this->insertPermissao . "\t" . $this->updatePermissao . "\t" . $this->removePermissao . "\nUSUÁRIO:\t" . $this->readUsuario . "\t" . $this->insertUsuario . "\t" . $this->updateUsuario . "\t" . $this->removeUsuario . "\n";
 		}
 
 		public function setId(int $id) {
@@ -80,203 +73,83 @@
 		}
 
 		public function setReadCliente($readCliente) {
-			if(is_bool($readCliente)) {
-				$this->readCliente = $readCliente;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->readCliente = $readCliente;
 		}
 
 		public function setInsertCliente($insertCliente) {
-			if(is_bool($insertCliente)) {
-				$this->insertCliente = $insertCliente;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->insertCliente = $insertCliente;
 		}
 
 		public function setUpdateCliente($updateCliente) {
-			if(is_bool($updateCliente)) {
-				$this->updateCliente = $updateCliente;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->updateCliente = $updateCliente;
 		}
 
 		public function setRemoveCliente($removeCliente) {
-			if(is_bool($removeCliente)) {
-				$this->removeCliente = $removeCliente;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->removeCliente = $removeCliente;
 		}
 
 		public function setReadFornecedor($readFornecedor) {
-			if(is_bool($readFornecedor)) {
-				$this->readFornecedor = $readFornecedor;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->readFornecedor = $readFornecedor;
 		}
 
 		public function setInsertFornecedor($insertFornecedor) {
-			if(is_bool($insertFornecedor)) {
-				$this->insertFornecedor = $insertFornecedor;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->insertFornecedor = $insertFornecedor;
 		}
 
 		public function setUpdateFornecedor($updateFornecedor) {
-			if(is_bool($updateFornecedor)) {
-				$this->updateFornecedor = $updateFornecedor;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->updateFornecedor = $updateFornecedor;
 		}
 
 		public function setRemoveFornecedor($removeFornecedor) {
-			if(is_bool($removeFornecedor)) {
-				$this->removeFornecedor = $removeFornecedor;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->removeFornecedor = $removeFornecedor;
 		}
 
 		public function setReadMp($readMp) {
-			if(is_bool($readMp)) {
-				$this->readMp = $readMp;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->readMp = $readMp;
 		}
 
 		public function setInsertMp($insertMp) {
-			if(is_bool($insertMp)) {
-				$this->insertMp = $insertMp;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->insertMp = $insertMp;
 		}
 
 		public function setUpdateMp($updateMp) {
-			if(is_bool($updateMp)) {
-				$this->updateMp = $updateMp;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->updateMp = $updateMp;
 		}
 
 		public function setRemoveMp($removeMp) {
-			if(is_bool($removeMp)) {
-				$this->removeMp = $removeMp;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->removeMp = $removeMp;
 		}
 
 		public function setReadPermissao($readPermissao) {
-			if(is_bool($readPermissao)) {
-				$this->readPermissao = $readPermissao;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->readPermissao = $readPermissao;
 		}
 
 		public function setInsertPermissao($insertPermissao) {
-			if(is_bool($insertPermissao)) {
-				$this->insertPermissao = $insertPermissao;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->insertPermissao = $insertPermissao;
 		}
 
 		public function setUpdatePermissao($updatePermissao) {
-			if(is_bool($updatePermissao)) {
-				$this->updatePermissao = $updatePermissao;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->updatePermissao = $updatePermissao;
 		}
 
 		public function setRemovePermissao($removePermissao) {
-			if(is_bool($removePermissao)) {
-				$this->removePermissao = $removePermissao;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->removePermissao = $removePermissao;
 		}
 
 		public function setReadUsuario($readUsuario) {
-			if(is_bool($readUsuario)) {
-				$this->readUsuario = $readUsuario;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->readUsuario = $readUsuario;
 		}
 
 		public function setInsertUsuario($insertUsuario) {
-			if(is_bool($insertUsuario)) {
-				$this->insertUsuario = $insertUsuario;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->insertUsuario = $insertUsuario;
 		}
 
 		public function setUpdateUsuario($updateUsuario) {
-			if(is_bool($updateUsuario)) {
-				$this->updateUsuario = $updateUsuario;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->updateUsuario = $updateUsuario;
 		}
 
 		public function setRemoveUsuario($removeUsuario) {
-			if(is_bool($removeUsuario)) {
-				$this->removeUsuario = $removeUsuario;
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			$this->removeUsuario = $removeUsuario;
 		}
 
 		public function getId() {
