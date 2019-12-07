@@ -9,7 +9,7 @@
 	$usuario1->setLogin("luizjoaquim");
 	$usuario1->setSenha("luizjoaquim");
 	$usuario1->setCargo($permissao1);
-	
+
 	$usuario2 = new Usuario();
 	$usuario2->setId(2);
 	$usuario2->setNome("Gustavo Belançon Mendes");
