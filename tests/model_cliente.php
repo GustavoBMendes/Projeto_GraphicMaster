@@ -6,7 +6,7 @@
 	$cliente1->setId(1);
 	$cliente1->setNome("Neymar da Silva Santos Júnior");
 	$cliente1->setCpf("382.443.358-31");
-	
+
 	$cliente2 = new Cliente();
 	$cliente2->setId(2);
 	$cliente2->setNome("Romário de Souza Faria");
