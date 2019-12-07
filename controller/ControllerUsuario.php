@@ -57,22 +57,12 @@
 
 		public function validaUsuario(Usuario $usuario) {
 			$controllerPermissao = new ControllerPermissao();
-			if($usuario->getId() && $usuario->getNome() && $usuario->getLogin() && $usuario->getSenha() && $controllerPermissao->validaPermissao($usuario->getCargo())) {
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			return $usuario->getId() && $usuario->getNome() && $usuario->getLogin() && $usuario->getSenha() && $controllerPermissao->validaPermissao($usuario->getCargo())) ? TRUE : FALSE;
 		}
 
 		public function validaLogin(string $login, string $senha) {
 			$usuario = $this->dao->searchLogin($login);
-			if($usuario && password_verify($senha, $usuario->getSenha())) {
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			return $usuario && password_verify($senha, $usuario->getSenha())) ? TRUE : FALSE;
 		}
 	}
 ?>
