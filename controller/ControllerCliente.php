@@ -55,12 +55,7 @@
 		}
 
 		public function validaCliente(Cliente $cliente) {
-			if($cliente->getId() && $cliente->getNome() && $cliente->getCpf()) {
-				return TRUE;
-			}
-			else {
-				return FALSE;
-			}
+			return $cliente->getId() && $cliente->getNome() && $cliente->getCpf() ? TRUE : FALSE;
 		}
 	}
 ?>
